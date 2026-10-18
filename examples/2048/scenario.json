@@ -1,0 +1,15 @@
+{
+  "title": "2048",
+  "url": "http://localhost:5181/",
+  "viewport": { "width": 600, "height": 800 },
+  "displayWidth": 480,
+  "out": "demo.svg",
+  "steps": [
+    { "eval": "localStorage.clear(); location.reload()", "waitMs": 800 },
+    { "shot": "Join the numbers", "holdMs": 1800 },
+    { "press": ["ArrowLeft", "ArrowDown"], "shot": "Slide with the arrow keys", "holdMs": 1300 },
+    { "press": ["ArrowLeft", "ArrowDown", "ArrowLeft", "ArrowDown"], "shot": "Same numbers merge", "holdMs": 1300 },
+    { "press": ["ArrowLeft", "ArrowDown", "ArrowLeft", "ArrowDown", "ArrowRight", "ArrowDown", "ArrowLeft", "ArrowDown"], "shot": "Tiles grow, score climbs", "holdMs": 1500 },
+    { "press": ["ArrowLeft", "ArrowDown", "ArrowLeft", "ArrowDown", "ArrowLeft", "ArrowDown", "ArrowRight", "ArrowDown", "ArrowLeft", "ArrowDown", "ArrowLeft", "ArrowDown"], "waitMs": 500, "shot": "Can you reach 2048?", "holdMs": 2800 }
+  ]
+}

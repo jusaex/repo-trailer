@@ -309,7 +309,7 @@ function main() {
   }
   const scenarioPath = resolve(args[0]);
   const outIdx = args.indexOf('--out');
-  const scenario = JSON.parse(readFileSync(scenarioPath, 'utf8'));
+  const scenario = JSON.parse(readFileSync(scenarioPath, 'utf8').replace(/^\uFEFF/, ''));
   const baseDir = dirname(scenarioPath);
   const out = resolve(baseDir, outIdx >= 0 ? args[outIdx + 1] : scenario.out ?? 'demo.svg');
   const theme = THEMES[scenario.theme ?? 'dark'] ?? THEMES.dark;

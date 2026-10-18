@@ -89,10 +89,10 @@ Top level: `title`, `cols` (80), `rows` (18), `theme` (`dark`/`light`), `prompt`
 }
 ```
 
-Actions (one per step): `goto` (url), `click` (CSS selector, draws a pointer so viewers see the click), `type` + optional `into` (selector), `press` (`Enter`, `Tab`, `Escape`, `ArrowDown`, ...), `scroll` (pixels), `waitFor` (selector), `wait` (ms), `eval` (JS run in the page).
+Actions (one per step): `goto` (url), `click` (CSS selector, draws a pointer so viewers see the click), `type` + optional `into` (selector), `press` (`Enter`, `Tab`, `Escape`, `ArrowDown`, ... or a list like `["ArrowLeft", "ArrowDown"]`, with `keyMs` between keys), `scroll` (pixels), `waitFor` (selector), `wait` (ms), `eval` (JS run in the page).
 Any step can also have `shot` — `true`, or a short caption shown as a pill at the bottom — plus `holdMs` (how long that frame stays, default 2200) and `waitMs` (settle time after the action).
 
-Top level: `title`, `url`, `viewport` (`width`, `height`, `scale`, `mobile`, `colorScheme`), `theme` (frame colors), `quality` (JPEG, default 80), `displayWidth` (960), `framesDir` (also save each screenshot as `.jpg`), `out`.
+Top level: `title`, `url`, `viewport` (`width`, `height`, `scale`, `mobile`, `colorScheme`), `theme` (frame colors), `quality` (JPEG, default 80), `displayWidth` (960), `captions` (`"below"` default, or `"overlay"`), `framesDir` (also save each screenshot as `.jpg`), `out`.
 
 Tips: 3–6 shots is ideal. Captions are short verbs ("Drag to reorder"). Keep the file under ~3 MB: fewer shots, smaller viewport or lower `quality`.
 

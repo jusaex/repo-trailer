@@ -182,7 +182,13 @@ async function press(b, name) {
 
 async function navigate(b, url, waitMs) {
   const loaded = b.waitEvent('Page.loadEventFired', 20000);
-  await b.page('Page.navigate', { url });
+  const nav = await b.page('Page.navigate', { url });
+  if (nav.errorText) {
+    const hint = nav.errorText.includes('ERR_ABORTED')
+      ? 'The server sent it as a download instead of a page (check its Content-Type).'
+      : 'Is the server running?';
+    throw new Error(`Could not open ${url}: ${nav.errorText}. ${hint}`);
+  }
   if (!(await loaded)) process.stderr.write(`warning: ${url} did not finish loading in 20s\n`);
   await sleep(waitMs);
 }
@@ -220,7 +226,12 @@ async function runSteps(b, scenario, baseDir) {
       }
       await sleep(step.waitMs ?? 200);
     } else if (step.press) {
-      await press(b, step.press);
+      // "press": "Enter" or a sequence like ["ArrowLeft", "ArrowDown", "ArrowLeft"]
+      const keys = [].concat(step.press);
+      for (let i = 0; i < keys.length; i++) {
+        await press(b, keys[i]);
+        if (i < keys.length - 1) await sleep(step.keyMs ?? 150);
+      }
       await sleep(step.waitMs ?? waitMs);
     } else if (step.scroll !== undefined) {
       await evaluate(b, `window.scrollBy({ top: ${Number(step.scroll)}, behavior: 'instant' })`);
@@ -254,7 +265,10 @@ function render(frames, scenario, theme) {
   const vw = scenario.viewport?.width ?? 1200;
   const vh = scenario.viewport?.height ?? 750;
   const W = vw;
-  const H = vh + BAR_H;
+  // Captions go in their own strip under the page so they never hide content ("captions": "overlay" to float them).
+  const overlay = scenario.captions === 'overlay';
+  const CAP_H = !overlay && frames.some((f) => f.caption) ? 52 : 0;
+  const H = vh + BAR_H + CAP_H;
   const fade = 350;
   const total = frames.reduce((s, f) => s + f.holdMs, 0);
   const pct = (ms) => ((ms / total) * 100).toFixed(3) + '%';
@@ -269,14 +283,18 @@ function render(frames, scenario, theme) {
     if (anim) {
       css.push(`@keyframes f${i}{0%{opacity:0}${pct(Math.max(t - fade, 0))}{opacity:0}${pct(t)}{opacity:1}100%{opacity:1}}#f${i}{animation:f${i} ${dur} linear infinite}`);
     }
-    const caption = f.caption
+    const strip = CAP_H
+      ? `<rect x="0" y="${BAR_H + vh}" width="${W}" height="${CAP_H}" fill="${theme.window}"/>` +
+        (f.caption ? `<text x="${W / 2}" y="${BAR_H + vh + CAP_H / 2 + 6}" text-anchor="middle" fill="${theme.caption}" style="font-size:17px;font-weight:600">${esc(f.caption)}</text>` : '')
+      : '';
+    const caption = !CAP_H && f.caption
       ? `<g transform="translate(${W / 2} ${H - 36})"><rect x="${-(f.caption.length * 5.2 + 24)}" y="-20" width="${f.caption.length * 10.4 + 48}" height="40" rx="20" fill="${theme.captionBg}"/><text x="0" y="6" text-anchor="middle" fill="${theme.caption}" style="font-size:17px;font-weight:600">${esc(f.caption)}</text></g>`
       : '';
     groups.push(`<g id="f${i}">
 <rect x="150" y="10" width="${W - 300}" height="26" rx="13" fill="${theme.bar}" stroke="${theme.border}"/>
 <text x="${W / 2}" y="28" text-anchor="middle" fill="${theme.url}" style="font-size:13px">${esc(f.url.replace(/^https?:\/\//, '').slice(0, 90))}</text>
 <image x="0" y="${BAR_H}" width="${vw}" height="${vh}" href="data:image/jpeg;base64,${f.data}"/>
-${caption}
+${strip}${caption}
 </g>`);
     t += f.holdMs;
   });
@@ -305,7 +323,7 @@ async function main() {
     process.exit(args.length ? 0 : 1);
   }
   const scenarioPath = resolve(args[0]);
-  const scenario = JSON.parse(readFileSync(scenarioPath, 'utf8'));
+  const scenario = JSON.parse(readFileSync(scenarioPath, 'utf8').replace(/^\uFEFF/, ''));
   const baseDir = dirname(scenarioPath);
   const outIdx = args.indexOf('--out');
   const out = resolve(baseDir, outIdx >= 0 ? args[outIdx + 1] : scenario.out ?? 'web-demo.svg');

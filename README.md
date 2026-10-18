@@ -43,6 +43,16 @@ The agent reads your code, figures out what makes it interesting, runs it for re
 
 **A README that tells a story**: one-line pitch, demo at the top, a quick start that gets to the "oh nice" moment fast, and only claims that are true.
 
+### Tried on a real project: 2048
+
+We pointed the `/trailer` steps at [gabrielecirulli/2048](https://github.com/gabrielecirulli/2048), the classic puzzle game (MIT). The agent found the "oh nice" moment (tiles merging, score climbing), served the game, played it with the arrow keys and recorded this:
+
+<p align="center">
+  <img src="examples/2048/demo.svg" alt="repo-trailer demo of the 2048 game" width="380">
+</p>
+
+The whole scenario is [a short JSON file](examples/2048/scenario.json).
+
 ## Why SVG and not GIF?
 
 | | Animated SVG (repo-trailer) | GIF |

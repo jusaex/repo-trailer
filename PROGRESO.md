@@ -1,4 +1,4 @@
-# repo-trailer: progreso
+﻿# repo-trailer: progreso
 
 Objetivo: un proyecto de GitHub que consiga muchas estrellas.
 Idea: un plugin para Claude Code (`/trailer`) que ejecuta tu proyecto, graba una demo animada (SVG) y escribe el README.
@@ -10,8 +10,15 @@ Idea: un plugin para Claude Code (`/trailer`) que ejecuta tu proyecto, graba una
 - `.claude-plugin/`: plugin y marketplace para instalarlo con `/plugin`.
 - README, licencia MIT y ejemplos en `examples/`. Para ver los ejemplos, abre `examples/preview.html`.
 
+- Subido a GitHub: https://github.com/jusaex/repo-trailer. Los SVG se mueven dentro del README.
+- Probado con un proyecto de otra persona: el juego 2048. La demo estÃ¡ en `examples/2048/`. Durante la prueba se arreglaron varias cosas:
+  - Los archivos JSON con BOM (marca invisible de Windows) ya no rompen el programa.
+  - Si una pÃ¡gina no abre, ahora da un error claro en vez de esperar 20 segundos.
+  - Se pueden pulsar varias teclas en un solo paso: `"press": ["ArrowLeft", "ArrowDown"]`.
+  - El texto de cada foto va en una franja debajo, asÃ­ no tapa la pÃ¡gina.
+
 ## Falta
-- Crear el repositorio `jusaex/repo-trailer` en GitHub y subirlo.
-- Probar `/trailer` de principio a fin en un proyecto ajeno.
-- Comprobar en GitHub que los SVG se mueven dentro del README.
+
+- Probarlo instalado de verdad con `/plugin install` en Claude Code.
+
 - Publicarlo en Reddit, Hacker News, X, etc.
