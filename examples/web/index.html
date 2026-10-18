@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tiny Todo</title>
+<style>
+  body { margin: 0; font-family: system-ui, sans-serif; background: #f4f1ea; color: #1d1d1f; display: grid; place-items: center; min-height: 100vh; }
+  main { width: 460px; background: #fff; border-radius: 16px; padding: 32px; box-shadow: 0 12px 40px rgba(0,0,0,.08); }
+  h1 { margin: 0 0 20px; font-size: 28px; }
+  form { display: flex; gap: 8px; }
+  #new { flex: 1; font: inherit; padding: 12px 14px; border: 1px solid #ddd; border-radius: 10px; }
+  button { font: inherit; padding: 12px 18px; border: 0; border-radius: 10px; background: #2f6fed; color: #fff; cursor: pointer; }
+  ul { list-style: none; padding: 0; margin: 20px 0 0; }
+  li { padding: 12px 4px; border-bottom: 1px solid #eee; display: flex; gap: 10px; align-items: center; }
+  li.done span { text-decoration: line-through; color: #999; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Tiny Todo</h1>
+  <form id="f">
+    <input id="new" placeholder="What needs doing?" autocomplete="off">
+    <button>Add</button>
+  </form>
+  <ul id="list">
+    <li><input type="checkbox"><span>Write a README</span></li>
+  </ul>
+</main>
+<script>
+  const list = document.getElementById('list');
+  document.getElementById('f').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const input = document.getElementById('new');
+    if (!input.value.trim()) return;
+    const li = document.createElement('li');
+    li.innerHTML = '<input type="checkbox"><span></span>';
+    li.querySelector('span').textContent = input.value;
+    list.append(li);
+    input.value = '';
+  });
+  list.addEventListener('change', (e) => e.target.closest('li').classList.toggle('done', e.target.checked));
+</script>
+</body>
+</html>

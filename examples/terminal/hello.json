@@ -1,0 +1,8 @@
+{
+  "title": "hello",
+  "out": "hello.svg",
+  "steps": [
+    { "cmd": "git --version" },
+    { "cmd": "node --version" }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Tiny Todo",
+  "url": "http://localhost:5180/examples/web/index.html",
+  "viewport": { "width": 1000, "height": 620 },
+  "out": "demo.svg",
+  "steps": [
+    { "shot": "A tiny todo app" },
+    { "type": "Record a demo", "into": "#new", "shot": "Type a task" },
+    { "press": "Enter", "shot": "Press Enter to add it" },
+    { "click": "#list li:first-child input", "shot": "Tick it off", "holdMs": 3000 }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "title": "repo-trailer · terminal demo",
+  "cols": 72,
+  "rows": 14,
+  "theme": "dark",
+  "out": "demo.svg",
+  "steps": [
+    { "comment": "# Real commands, real output, recorded as an SVG" },
+    { "cmd": "node --version", "pauseMs": 900 },
+    { "cmd": "node -e \"console.log('\\x1b[32m✔\\x1b[0m build passed  \\x1b[2m(1.2s)\\x1b[0m'); console.log('\\x1b[1;34minfo\\x1b[0m 3 files changed')\"", "display": "npm run build" },
+    { "cmd": "node -e \"for (let i = 1; i <= 12; i++) console.log('\\x1b[36mline\\x1b[0m ' + i)\"", "display": "cat lines.txt", "pauseMs": 2000 }
+  ]
+}

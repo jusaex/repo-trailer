@@ -1,0 +1,10 @@
+{
+  "name": "repo-trailer",
+  "version": "0.1.0",
+  "description": "Give your repo a trailer: your agent runs your project, records an animated demo (terminal or web) and writes a README people want to star.",
+  "author": {
+    "name": "jusaex"
+  },
+  "license": "MIT",
+  "keywords": ["readme", "demo", "gif", "svg", "terminal", "screenshot", "documentation", "claude-code"]
+}

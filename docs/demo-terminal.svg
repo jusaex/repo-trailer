@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="688" height="400" viewBox="0 0 688 400" role="img" aria-label="repo-trailer">
+<title>repo-trailer</title>
+<style>text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;font-size:14px;white-space:pre}
+.a{animation-duration:15.43s;animation-iteration-count:infinite;animation-timing-function:step-end}
+@keyframes l0{0%{opacity:0}3.241%{opacity:1}100%{opacity:1}}#l0{animation-name:l0}
+@keyframes l1{0%{opacity:0}7.131%{opacity:1}100%{opacity:1}}#l1{animation-name:l1}
+@keyframes m1{0%{transform:translateX(0)}7.131%{transform:translateX(0);animation-timing-function:steps(13,end)}10.924%{transform:translateX(109.2px)}100%{transform:translateX(109.2px)}}
+@keyframes h1{0%{opacity:1}13.193%{opacity:0}100%{opacity:0}}
+#m1{animation:m1 15.43s infinite linear}#h1{animation:h1 15.43s infinite step-end}
+@keyframes l2{0%{opacity:0}13.193%{opacity:1}100%{opacity:1}}#l2{animation-name:l2}
+@keyframes l3{0%{opacity:0}13.387%{opacity:1}100%{opacity:1}}#l3{animation-name:l3}
+@keyframes l4{0%{opacity:0}13.582%{opacity:1}100%{opacity:1}}#l4{animation-name:l4}
+@keyframes l5{0%{opacity:0}13.776%{opacity:1}100%{opacity:1}}#l5{animation-name:l5}
+@keyframes l6{0%{opacity:0}13.971%{opacity:1}100%{opacity:1}}#l6{animation-name:l6}
+@keyframes l7{0%{opacity:0}14.165%{opacity:1}100%{opacity:1}}#l7{animation-name:l7}
+@keyframes l8{0%{opacity:0}14.360%{opacity:1}100%{opacity:1}}#l8{animation-name:l8}
+@keyframes l9{0%{opacity:0}14.554%{opacity:1}100%{opacity:1}}#l9{animation-name:l9}
+@keyframes l10{0%{opacity:0}29.011%{opacity:1}100%{opacity:1}}#l10{animation-name:l10}
+@keyframes l11{0%{opacity:0}32.901%{opacity:1}100%{opacity:1}}#l11{animation-name:l11}
+@keyframes m11{0%{transform:translateX(0)}32.901%{transform:translateX(0);animation-timing-function:steps(27,end)}40.778%{transform:translateX(226.8px)}100%{transform:translateX(226.8px)}}
+@keyframes h11{0%{opacity:1}43.047%{opacity:0}100%{opacity:0}}
+#m11{animation:m11 15.43s infinite linear}#h11{animation:h11 15.43s infinite step-end}
+@keyframes l12{0%{opacity:0}43.047%{opacity:1}100%{opacity:1}}#l12{animation-name:l12}
+@keyframes l13{0%{opacity:0}43.241%{opacity:1}100%{opacity:1}}#l13{animation-name:l13}
+@keyframes l14{0%{opacity:0}43.436%{opacity:1}100%{opacity:1}}#l14{animation-name:l14}
+@keyframes l15{0%{opacity:0}55.300%{opacity:1}100%{opacity:1}}#l15{animation-name:l15}
+@keyframes l16{0%{opacity:0}59.190%{opacity:1}100%{opacity:1}}#l16{animation-name:l16}
+@keyframes m16{0%{transform:translateX(0)}59.190%{transform:translateX(0);animation-timing-function:steps(41,end)}71.151%{transform:translateX(344.4px)}100%{transform:translateX(344.4px)}}
+@keyframes h16{0%{opacity:1}73.420%{opacity:0}100%{opacity:0}}
+#m16{animation:m16 15.43s infinite linear}#h16{animation:h16 15.43s infinite step-end}
+@keyframes l17{0%{opacity:0}77.310%{opacity:1}100%{opacity:1}}#l17{animation-name:l17}
+@keyframes sc{0.000%{transform:translateY(0px)}77.310%{transform:translateY(-20px)}100%{transform:translateY(-20px)}}#sc{animation-name:sc}</style>
+<defs><clipPath id="view"><rect x="0" y="0" width="656" height="340"/></clipPath></defs>
+<rect x="0.5" y="0.5" width="687" height="399" rx="10" fill="#0d1117" stroke="#30363d"/>
+<path d="M0.5 36V10.5a10 10 0 0 1 10-10h667a10 10 0 0 1 10 10V36Z" fill="#161b22"/>
+<line x1="0.5" y1="36" x2="687.5" y2="36" stroke="#30363d"/>
+<circle cx="20" cy="18" r="6" fill="#ff5f57"/><circle cx="40" cy="18" r="6" fill="#febc2e"/><circle cx="60" cy="18" r="6" fill="#28c840"/>
+<text x="344" y="23" text-anchor="middle" fill="#8b949e" style="font-size:13px">repo-trailer</text>
+<g transform="translate(16 44)" clip-path="url(#view)"><g id="sc" class="a">
+<g id="l0" class="a" transform="translate(0 20)"><text y="-5"><tspan x="0.0" textLength="218.4" lengthAdjust="spacing" fill="#8b949e" font-style="italic"># 1. describe what to show</tspan></text></g>
+<g id="l1" class="a" transform="translate(0 40)"><text y="-5"><tspan x="0.0" textLength="16.8" lengthAdjust="spacing" fill="#3fb950" font-weight="bold">$ </tspan><tspan x="16.8" textLength="109.2" lengthAdjust="spacing" fill="#e6edf3">cat demo.json</tspan></text><g id="h1"><g id="m1"><rect x="16.8" y="-17" width="8.4" height="16" fill="#e6edf3" opacity="0.85"/><rect x="25.2" y="-19" width="117.6" height="20" fill="#0d1117"/></g></g></g>
+<g id="l2" class="a" transform="translate(0 60)"><text y="-5"><tspan x="0.0" textLength="8.4" lengthAdjust="spacing" fill="#e6edf3">{</tspan></text></g>
+<g id="l3" class="a" transform="translate(0 80)"><text y="-5"><tspan x="0.0" textLength="159.6" lengthAdjust="spacing" fill="#e6edf3">  &quot;title&quot;: &quot;hello&quot;,</tspan></text></g>
+<g id="l4" class="a" transform="translate(0 100)"><text y="-5"><tspan x="0.0" textLength="176.4" lengthAdjust="spacing" fill="#e6edf3">  &quot;out&quot;: &quot;hello.svg&quot;,</tspan></text></g>
+<g id="l5" class="a" transform="translate(0 120)"><text y="-5"><tspan x="0.0" textLength="100.8" lengthAdjust="spacing" fill="#e6edf3">  &quot;steps&quot;: [</tspan></text></g>
+<g id="l6" class="a" transform="translate(0 140)"><text y="-5"><tspan x="0.0" textLength="260.4" lengthAdjust="spacing" fill="#e6edf3">    { &quot;cmd&quot;: &quot;git --version&quot; },</tspan></text></g>
+<g id="l7" class="a" transform="translate(0 160)"><text y="-5"><tspan x="0.0" textLength="260.4" lengthAdjust="spacing" fill="#e6edf3">    { &quot;cmd&quot;: &quot;node --version&quot; }</tspan></text></g>
+<g id="l8" class="a" transform="translate(0 180)"><text y="-5"><tspan x="0.0" textLength="25.2" lengthAdjust="spacing" fill="#e6edf3">  ]</tspan></text></g>
+<g id="l9" class="a" transform="translate(0 200)"><text y="-5"><tspan x="0.0" textLength="8.4" lengthAdjust="spacing" fill="#e6edf3">}</tspan></text></g>
+<g id="l10" class="a" transform="translate(0 220)"><text y="-5"><tspan x="0.0" textLength="352.8" lengthAdjust="spacing" fill="#8b949e" font-style="italic"># 2. record it: real commands, real output</tspan></text></g>
+<g id="l11" class="a" transform="translate(0 240)"><text y="-5"><tspan x="0.0" textLength="16.8" lengthAdjust="spacing" fill="#3fb950" font-weight="bold">$ </tspan><tspan x="16.8" textLength="226.8" lengthAdjust="spacing" fill="#e6edf3">node term-svg.mjs demo.json</tspan></text><g id="h11"><g id="m11"><rect x="16.8" y="-17" width="8.4" height="16" fill="#e6edf3" opacity="0.85"/><rect x="25.2" y="-19" width="235.2" height="20" fill="#0d1117"/></g></g></g>
+<g id="l12" class="a" transform="translate(0 260)"><text y="-5"><tspan x="0.0" textLength="201.6" lengthAdjust="spacing" fill="#e6edf3" opacity="0.6">recording: git --version</tspan></text></g>
+<g id="l13" class="a" transform="translate(0 280)"><text y="-5"><tspan x="0.0" textLength="210.0" lengthAdjust="spacing" fill="#e6edf3" opacity="0.6">recording: node --version</tspan></text></g>
+<g id="l14" class="a" transform="translate(0 300)"><text y="-5"><tspan x="0.0" textLength="520.8" lengthAdjust="spacing" fill="#e6edf3">wrote examples\terminal\hello.svg (3.6 KB, 8.5s loop, 5 lines)</tspan></text></g>
+<g id="l15" class="a" transform="translate(0 320)"><text y="-5"><tspan x="0.0" textLength="436.8" lengthAdjust="spacing" fill="#8b949e" font-style="italic"># 3. put it in your README. It plays right on GitHub</tspan></text></g>
+<g id="l16" class="a" transform="translate(0 340)"><text y="-5"><tspan x="0.0" textLength="16.8" lengthAdjust="spacing" fill="#3fb950" font-weight="bold">$ </tspan><tspan x="16.8" textLength="344.4" lengthAdjust="spacing" fill="#e6edf3">echo '&lt;img src=&quot;hello.svg&quot;&gt;' &gt;&gt; README.md</tspan></text><g id="h16"><g id="m16"><rect x="16.8" y="-17" width="8.4" height="16" fill="#e6edf3" opacity="0.85"/><rect x="25.2" y="-19" width="352.8" height="20" fill="#0d1117"/></g></g></g>
+<g id="l17" class="a" transform="translate(0 360)"><text y="-5"><tspan x="0.0" textLength="16.8" lengthAdjust="spacing" fill="#3fb950" font-weight="bold">$ </tspan></text><rect x="16.8" y="-17" width="8.4" height="16" fill="#e6edf3" opacity="0.85"/></g>
+</g></g>
+</svg>

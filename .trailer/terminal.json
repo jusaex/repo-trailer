@@ -1,0 +1,25 @@
+{
+  "title": "repo-trailer",
+  "cols": 78,
+  "rows": 17,
+  "theme": "dark",
+  "cwd": "..",
+  "out": "../docs/demo-terminal.svg",
+  "steps": [
+    { "comment": "# 1. describe what to show" },
+    {
+      "cmd": "node -e \"process.stdout.write(require('fs').readFileSync('examples/terminal/hello.json','utf8'))\"",
+      "display": "cat demo.json",
+      "pauseMs": 2200
+    },
+    { "comment": "# 2. record it: real commands, real output" },
+    {
+      "cmd": "node skills/trailer/scripts/term-svg.mjs examples/terminal/hello.json",
+      "display": "node term-svg.mjs demo.json",
+      "pauseMs": 1800
+    },
+    { "comment": "# 3. put it in your README. It plays right on GitHub" },
+    { "cmd": "node -e \"console.log('<img src=\\\"hello.svg\\\">')\"", "display": "echo '<img src=\"hello.svg\">' >> README.md", "output": "", "pauseMs": 600 }
+  ],
+  "endPauseMs": 3500
+}

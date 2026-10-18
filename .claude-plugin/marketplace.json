@@ -1,0 +1,13 @@
+{
+  "name": "repo-trailer",
+  "owner": {
+    "name": "jusaex"
+  },
+  "plugins": [
+    {
+      "name": "repo-trailer",
+      "source": "./",
+      "description": "Your agent runs your project, records an animated demo and writes a README people want to star."
+    }
+  ]
+}

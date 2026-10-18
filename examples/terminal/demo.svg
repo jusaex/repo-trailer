@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="637" height="340" viewBox="0 0 637 340" role="img" aria-label="repo-trailer · terminal demo">
+<title>repo-trailer · terminal demo</title>
+<style>text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;font-size:14px;white-space:pre}
+.a{animation-duration:11.80s;animation-iteration-count:infinite;animation-timing-function:step-end}
+@keyframes l0{0%{opacity:0}4.237%{opacity:1}100%{opacity:1}}#l0{animation-name:l0}
+@keyframes l1{0%{opacity:0}9.322%{opacity:1}100%{opacity:1}}#l1{animation-name:l1}
+@keyframes m1{0%{transform:translateX(0)}9.322%{transform:translateX(0);animation-timing-function:steps(14,end)}14.661%{transform:translateX(117.6px)}100%{transform:translateX(117.6px)}}
+@keyframes h1{0%{opacity:1}17.627%{opacity:0}100%{opacity:0}}
+#m1{animation:m1 11.80s infinite linear}#h1{animation:h1 11.80s infinite step-end}
+@keyframes l2{0%{opacity:0}17.627%{opacity:1}100%{opacity:1}}#l2{animation-name:l2}
+@keyframes l3{0%{opacity:0}25.508%{opacity:1}100%{opacity:1}}#l3{animation-name:l3}
+@keyframes m3{0%{transform:translateX(0)}25.508%{transform:translateX(0);animation-timing-function:steps(13,end)}30.466%{transform:translateX(109.2px)}100%{transform:translateX(109.2px)}}
+@keyframes h3{0%{opacity:1}33.432%{opacity:0}100%{opacity:0}}
+#m3{animation:m3 11.80s infinite linear}#h3{animation:h3 11.80s infinite step-end}
+@keyframes l4{0%{opacity:0}33.432%{opacity:1}100%{opacity:1}}#l4{animation-name:l4}
+@keyframes l5{0%{opacity:0}33.686%{opacity:1}100%{opacity:1}}#l5{animation-name:l5}
+@keyframes l6{0%{opacity:0}46.653%{opacity:1}100%{opacity:1}}#l6{animation-name:l6}
+@keyframes m6{0%{transform:translateX(0)}46.653%{transform:translateX(0);animation-timing-function:steps(13,end)}51.610%{transform:translateX(109.2px)}100%{transform:translateX(109.2px)}}
+@keyframes h6{0%{opacity:1}54.576%{opacity:0}100%{opacity:0}}
+#m6{animation:m6 11.80s infinite linear}#h6{animation:h6 11.80s infinite step-end}
+@keyframes l7{0%{opacity:0}54.576%{opacity:1}100%{opacity:1}}#l7{animation-name:l7}
+@keyframes l8{0%{opacity:0}54.831%{opacity:1}100%{opacity:1}}#l8{animation-name:l8}
+@keyframes l9{0%{opacity:0}55.085%{opacity:1}100%{opacity:1}}#l9{animation-name:l9}
+@keyframes l10{0%{opacity:0}55.339%{opacity:1}100%{opacity:1}}#l10{animation-name:l10}
+@keyframes l11{0%{opacity:0}55.593%{opacity:1}100%{opacity:1}}#l11{animation-name:l11}
+@keyframes l12{0%{opacity:0}55.847%{opacity:1}100%{opacity:1}}#l12{animation-name:l12}
+@keyframes l13{0%{opacity:0}56.102%{opacity:1}100%{opacity:1}}#l13{animation-name:l13}
+@keyframes l14{0%{opacity:0}56.356%{opacity:1}100%{opacity:1}}#l14{animation-name:l14}
+@keyframes l15{0%{opacity:0}56.610%{opacity:1}100%{opacity:1}}#l15{animation-name:l15}
+@keyframes l16{0%{opacity:0}56.864%{opacity:1}100%{opacity:1}}#l16{animation-name:l16}
+@keyframes l17{0%{opacity:0}57.119%{opacity:1}100%{opacity:1}}#l17{animation-name:l17}
+@keyframes l18{0%{opacity:0}57.373%{opacity:1}100%{opacity:1}}#l18{animation-name:l18}
+@keyframes l19{0%{opacity:0}74.576%{opacity:1}100%{opacity:1}}#l19{animation-name:l19}
+@keyframes sc{0.000%{transform:translateY(0px)}56.356%{transform:translateY(-20px)}56.610%{transform:translateY(-40px)}56.864%{transform:translateY(-60px)}57.119%{transform:translateY(-80px)}57.373%{transform:translateY(-100px)}74.576%{transform:translateY(-120px)}100%{transform:translateY(-120px)}}#sc{animation-name:sc}</style>
+<defs><clipPath id="view"><rect x="0" y="0" width="605" height="280"/></clipPath></defs>
+<rect x="0.5" y="0.5" width="636" height="339" rx="10" fill="#0d1117" stroke="#30363d"/>
+<path d="M0.5 36V10.5a10 10 0 0 1 10-10h616a10 10 0 0 1 10 10V36Z" fill="#161b22"/>
+<line x1="0.5" y1="36" x2="636.5" y2="36" stroke="#30363d"/>
+<circle cx="20" cy="18" r="6" fill="#ff5f57"/><circle cx="40" cy="18" r="6" fill="#febc2e"/><circle cx="60" cy="18" r="6" fill="#28c840"/>
+<text x="318.5" y="23" text-anchor="middle" fill="#8b949e" style="font-size:13px">repo-trailer · terminal demo</text>
+<g transform="translate(16 44)" clip-path="url(#view)"><g id="sc" class="a">
+<g id="l0" class="a" transform="translate(0 20)"><text y="-5"><tspan x="0.0" textLength="403.2" lengthAdjust="spacing" fill="#8b949e" font-style="italic"># Real commands, real output, recorded as an SVG</tspan></text></g>
+<g id="l1" class="a" transform="translate(0 40)"><text y="-5"><tspan x="0.0" textLength="16.8" lengthAdjust="spacing" fill="#3fb950" font-weight="bold">$ </tspan><tspan x="16.8" textLength="117.6" lengthAdjust="spacing" fill="#e6edf3">node --version</tspan></text><g id="h1"><g id="m1"><rect x="16.8" y="-17" width="8.4" height="16" fill="#e6edf3" opacity="0.85"/><rect x="25.2" y="-19" width="126.0" height="20" fill="#0d1117"/></g></g></g>
+<g id="l2" class="a" transform="translate(0 60)"><text y="-5"><tspan x="0.0" textLength="67.2" lengthAdjust="spacing" fill="#e6edf3">v24.20.0</tspan></text></g>
+<g id="l3" class="a" transform="translate(0 80)"><text y="-5"><tspan x="0.0" textLength="16.8" lengthAdjust="spacing" fill="#3fb950" font-weight="bold">$ </tspan><tspan x="16.8" textLength="109.2" lengthAdjust="spacing" fill="#e6edf3">npm run build</tspan></text><g id="h3"><g id="m3"><rect x="16.8" y="-17" width="8.4" height="16" fill="#e6edf3" opacity="0.85"/><rect x="25.2" y="-19" width="117.6" height="20" fill="#0d1117"/></g></g></g>
+<g id="l4" class="a" transform="translate(0 100)"><text y="-5"><tspan x="0.0" textLength="8.4" lengthAdjust="spacing" fill="#3fb950">✔</tspan><tspan x="8.4" textLength="126.0" lengthAdjust="spacing" fill="#e6edf3"> build passed  </tspan><tspan x="134.4" textLength="50.4" lengthAdjust="spacing" fill="#e6edf3" opacity="0.6">(1.2s)</tspan></text></g>
+<g id="l5" class="a" transform="translate(0 120)"><text y="-5"><tspan x="0.0" textLength="33.6" lengthAdjust="spacing" fill="#58a6ff" font-weight="bold">info</tspan><tspan x="33.6" textLength="134.4" lengthAdjust="spacing" fill="#e6edf3"> 3 files changed</tspan></text></g>
+<g id="l6" class="a" transform="translate(0 140)"><text y="-5"><tspan x="0.0" textLength="16.8" lengthAdjust="spacing" fill="#3fb950" font-weight="bold">$ </tspan><tspan x="16.8" textLength="109.2" lengthAdjust="spacing" fill="#e6edf3">cat lines.txt</tspan></text><g id="h6"><g id="m6"><rect x="16.8" y="-17" width="8.4" height="16" fill="#e6edf3" opacity="0.85"/><rect x="25.2" y="-19" width="117.6" height="20" fill="#0d1117"/></g></g></g>
+<g id="l7" class="a" transform="translate(0 160)"><text y="-5"><tspan x="0.0" textLength="33.6" lengthAdjust="spacing" fill="#39c5cf">line</tspan><tspan x="33.6" textLength="16.8" lengthAdjust="spacing" fill="#e6edf3"> 1</tspan></text></g>
+<g id="l8" class="a" transform="translate(0 180)"><text y="-5"><tspan x="0.0" textLength="33.6" lengthAdjust="spacing" fill="#39c5cf">line</tspan><tspan x="33.6" textLength="16.8" lengthAdjust="spacing" fill="#e6edf3"> 2</tspan></text></g>
+<g id="l9" class="a" transform="translate(0 200)"><text y="-5"><tspan x="0.0" textLength="33.6" lengthAdjust="spacing" fill="#39c5cf">line</tspan><tspan x="33.6" textLength="16.8" lengthAdjust="spacing" fill="#e6edf3"> 3</tspan></text></g>
+<g id="l10" class="a" transform="translate(0 220)"><text y="-5"><tspan x="0.0" textLength="33.6" lengthAdjust="spacing" fill="#39c5cf">line</tspan><tspan x="33.6" textLength="16.8" lengthAdjust="spacing" fill="#e6edf3"> 4</tspan></text></g>
+<g id="l11" class="a" transform="translate(0 240)"><text y="-5"><tspan x="0.0" textLength="33.6" lengthAdjust="spacing" fill="#39c5cf">line</tspan><tspan x="33.6" textLength="16.8" lengthAdjust="spacing" fill="#e6edf3"> 5</tspan></text></g>
+<g id="l12" class="a" transform="translate(0 260)"><text y="-5"><tspan x="0.0" textLength="33.6" lengthAdjust="spacing" fill="#39c5cf">line</tspan><tspan x="33.6" textLength="16.8" lengthAdjust="spacing" fill="#e6edf3"> 6</tspan></text></g>
+<g id="l13" class="a" transform="translate(0 280)"><text y="-5"><tspan x="0.0" textLength="33.6" lengthAdjust="spacing" fill="#39c5cf">line</tspan><tspan x="33.6" textLength="16.8" lengthAdjust="spacing" fill="#e6edf3"> 7</tspan></text></g>
+<g id="l14" class="a" transform="translate(0 300)"><text y="-5"><tspan x="0.0" textLength="33.6" lengthAdjust="spacing" fill="#39c5cf">line</tspan><tspan x="33.6" textLength="16.8" lengthAdjust="spacing" fill="#e6edf3"> 8</tspan></text></g>
+<g id="l15" class="a" transform="translate(0 320)"><text y="-5"><tspan x="0.0" textLength="33.6" lengthAdjust="spacing" fill="#39c5cf">line</tspan><tspan x="33.6" textLength="16.8" lengthAdjust="spacing" fill="#e6edf3"> 9</tspan></text></g>
+<g id="l16" class="a" transform="translate(0 340)"><text y="-5"><tspan x="0.0" textLength="33.6" lengthAdjust="spacing" fill="#39c5cf">line</tspan><tspan x="33.6" textLength="25.2" lengthAdjust="spacing" fill="#e6edf3"> 10</tspan></text></g>
+<g id="l17" class="a" transform="translate(0 360)"><text y="-5"><tspan x="0.0" textLength="33.6" lengthAdjust="spacing" fill="#39c5cf">line</tspan><tspan x="33.6" textLength="25.2" lengthAdjust="spacing" fill="#e6edf3"> 11</tspan></text></g>
+<g id="l18" class="a" transform="translate(0 380)"><text y="-5"><tspan x="0.0" textLength="33.6" lengthAdjust="spacing" fill="#39c5cf">line</tspan><tspan x="33.6" textLength="25.2" lengthAdjust="spacing" fill="#e6edf3"> 12</tspan></text></g>
+<g id="l19" class="a" transform="translate(0 400)"><text y="-5"><tspan x="0.0" textLength="16.8" lengthAdjust="spacing" fill="#3fb950" font-weight="bold">$ </tspan></text><rect x="16.8" y="-17" width="8.4" height="16" fill="#e6edf3" opacity="0.85"/></g>
+</g></g>
+</svg>
